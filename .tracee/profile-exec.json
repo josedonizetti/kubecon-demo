@@ -5035,6 +5035,17 @@
     "process_env": null
   },
   {
+    "user_id": 0,
+    "process_name": "killall",
+    "binary_path": "/usr/bin/killall",
+    "binary_sha256": "4527e56d015ec6003c985302ef8b222bf054bff69a4f6c0c782cd089e0aa688c",
+    "process_args": [
+      "killall",
+      "tracee"
+    ],
+    "process_env": null
+  },
+  {
     "user_id": 1001,
     "process_name": "sleep",
     "binary_path": "/usr/bin/sleep",
