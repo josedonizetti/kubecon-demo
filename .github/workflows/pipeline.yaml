@@ -1,0 +1,33 @@
+name: CICD
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Go
+      uses: actions/setup-go@v2
+
+    - name: Start Tracee profiling in background
+      uses: aquasecurity/tracee-action@b45abcc4369bfff7ed0f41a1476e5a44d9bdffdc
+
+    - name: Verify dependencies
+      run: go mod verify
+
+    - name: Run tests
+      run: go test -race -vet=off ./...
+
+    - name: Build
+      run: go build -o app -v ./...
+
+    - name: Fake upload
+      uses: josedonizetti/upload-fake-action@v0.1.0
+
+    - name: Stop and Check Tracee results and create a PR
+      uses: aquasecurity/tracee-action@8d16edbf40c7c125e4da3e2e4e1bc22e63b55810
+      with:
+        create-pr: "true"
+        fail-on-diff: "true"
