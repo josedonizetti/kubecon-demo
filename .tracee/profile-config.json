@@ -1,7 +1,11 @@
 {
   "args_discard": [
-    "/home/runner/work/_temp/",
-		"/tmp/go-build"
+   "/home/runner/work/_temp/",
+   "/tmp/go-build",
+   "/tmp/cgo-gcc-input",
+   "-plugin-opt=-fresolution=",
+   "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/traceback.", 
+   "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/trace"
   ],
   "env_discard": [
     "RUNNER_TRACKING_ID",
@@ -25,6 +29,7 @@
 		"d1e2d687e235e502ab2305039779e936fe8a4abfc4192203ea161e319260a6f5",
 		"b10abbd0cf6eb8a4c9be29706b364f8f9a77dbb12185071d6346da17ce325705",
 		"325cbc2db04a6610cec50a13250ff1a31a278302758ede163bf34b89fbc72857",
-		"a7750d12675eeebe864ff573cc6b28e8f825ffc71847efd705a633388bb69b87"
+		"a7750d12675eeebe864ff573cc6b28e8f825ffc71847efd705a633388bb69b87",
+		"c7ab3773975b42b5db77fc10b7095d7d5a9c0392f394d4b317ddfc502b0ddbca"
 	]
 }
