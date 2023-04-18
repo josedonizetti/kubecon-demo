@@ -2984,8 +2984,6 @@
       "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/time_nofake.go",
       "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/timeasm.go",
       "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/tls_stub.go",
-      "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/trace.go",
-      "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/trace",
       "?",
       "?",
       "?",
@@ -3150,7 +3148,6 @@
       "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/time_nofake.go",
       "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/timeasm.go",
       "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/tls_stub.go",
-      "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/trace.go",
       "/opt/hostedtoolcache/go/1.2",
       "?",
       "?",
@@ -3567,9 +3564,7 @@
       "-c=2",
       "-nolocalimports",
       "-importcfg",
-      "-pack",
-      "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/trace/annotation.go",
-      "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/trace/trace.go"
+      "-pack"
     ],
     "process_env": null
   },
@@ -4879,7 +4874,6 @@
       "-plugin",
       "/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so",
       "-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper",
-      "-plugin-opt=-fresolution=/tmp/cc0rFKLR.res",
       "-plugin-opt=-pass-through=-lgcc",
       "-plugin-opt=-pass-through=-lgcc_s",
       "-plugin-opt=-pass-through=-lpthread",
@@ -4940,7 +4934,6 @@
       "-plugin",
       "/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so",
       "-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper",
-      "-plugin-opt=-fresolution=/tmp/ccWo6eCm.res",
       "-plugin-opt=-pass-through=-lgcc",
       "-plugin-opt=-pass-through=-lgcc_s",
       "-plugin-opt=-pass-through=-lpthread",
@@ -5019,8 +5012,7 @@
       "-I",
       "-O2",
       "-I",
-      ".",
-      "/tmp/cgo-gcc-input-555462850.c"
+      "."
     ],
     "process_env": null
   },
@@ -5040,8 +5032,7 @@
       "-Werror",
       "-fno-stack-protector",
       "-I",
-      ".",
-      "/tmp/cgo-gcc-input-1929850681.c"
+      "."
     ],
     "process_env": null
   },
