@@ -27,7 +27,7 @@ jobs:
       uses: josedonizetti/upload-fake-action@v0.1.0
 
     - name: Stop and Check Tracee results and create a PR
-      uses: aquasecurity/tracee-action@8d16edbf40c7c125e4da3e2e4e1bc22e63b55810
+      uses: aquasecurity/tracee-action@e114d60efbb7d7a11f2318740304c8cfe2bfc27a
       with:
         create-pr: "true"
         fail-on-diff: "true"
