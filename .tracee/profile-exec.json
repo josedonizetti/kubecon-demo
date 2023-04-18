@@ -2,22 +2,11 @@
   {
     "user_id": 1001,
     "process_name": "build-tests.tes",
-    "binary_path": "/tmp/go-build997151109/b001/build-tests.test",
+    "binary_path": "/tmp/go-build3602607318/b001/build-tests.test",
     "binary_sha256": "b10abbd0cf6eb8a4c9be29706b364f8f9a77dbb12185071d6346da17ce325705",
     "process_args": [
       "-test.paniconexit0",
       "-test.timeout=10m0s"
-    ],
-    "process_env": null
-  },
-  {
-    "user_id": 1001,
-    "process_name": "asm",
-    "binary_path": "/opt/hostedtoolcache/go/1.20.3/x64/pkg/tool/linux_amd64/asm",
-    "binary_sha256": "d1e2d687e235e502ab2305039779e936fe8a4abfc4192203ea161e319260a6f5",
-    "process_args": [
-      "/opt/hostedtoolcache/go/1.20.3/x64/pkg/tool/linux_amd64/asm",
-      "-V=full"
     ],
     "process_env": null
   },
@@ -5551,7 +5540,7 @@
       "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/timeasm.go",
       "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/tls_stub.go",
       "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/trace.go",
-      "/opt/hostedtoolcache/go/1.20.3/x",
+      "/opt/hostedtoolcache/go/1.2",
       "?",
       "?",
       "?",
@@ -7279,7 +7268,68 @@
       "-plugin",
       "/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so",
       "-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper",
-      "-plugin-opt=-fresolution=/tmp/cc8hRGrG.res",
+      "-plugin-opt=-fresolution=/tmp/ccCbwoHd.res",
+      "-plugin-opt=-pass-through=-lgcc",
+      "-plugin-opt=-pass-through=-lgcc_s",
+      "-plugin-opt=-pass-through=-lpthread",
+      "-plugin-opt=-pass-through=-lc",
+      "-plugin-opt=-pass-through=-lgcc",
+      "-plugin-opt=-pass-through=-lgcc_s",
+      "--build-id",
+      "--eh-frame-hdr",
+      "-m",
+      "elf_x86_64",
+      "--hash-style=gnu",
+      "--as-needed",
+      "-dynamic-linker",
+      "/lib64/ld-linux-x86-64.so.2",
+      "-pie",
+      "-z",
+      "now",
+      "-z",
+      "relro",
+      "-o",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o",
+      "-L/usr/lib/gcc/x86_64-linux-gnu/11",
+      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu",
+      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib",
+      "-L/lib/x86_64-linux-gnu",
+      "-L/lib/../lib",
+      "-L/usr/lib/x86_64-linux-gnu",
+      "-L/usr/lib/../lib",
+      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..",
+      "--no-gc-sections",
+      "-lpthread",
+      "-lgcc",
+      "--push-state",
+      "--as-needed",
+      "-lgcc_s",
+      "--pop-state",
+      "-lpthread",
+      "-lc",
+      "-lgcc",
+      "--push-state",
+      "--as-needed",
+      "-lgcc_s",
+      "--pop-state",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o"
+    ],
+    "process_env": null
+  },
+  {
+    "user_id": 1001,
+    "process_name": "ld",
+    "binary_path": "/usr/bin/x86_64-linux-gnu-ld.bfd",
+    "binary_sha256": "05687dbeab906353f44b730d891048a70ff1b7f6976707ba6d3fb777648d264e",
+    "process_args": [
+      "/usr/bin/ld",
+      "-plugin",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so",
+      "-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper",
+      "-plugin-opt=-fresolution=/tmp/ccnVwrah.res",
       "-plugin-opt=-pass-through=-lgcc",
       "-plugin-opt=-pass-through=-lgcc_s",
       "-plugin-opt=-pass-through=-lpthread",
@@ -7313,67 +7363,6 @@
       "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..",
       "--no-gc-sections",
       "/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/race/internal/amd64v1/race_linux.syso",
-      "-lgcc",
-      "--push-state",
-      "--as-needed",
-      "-lgcc_s",
-      "--pop-state",
-      "-lpthread",
-      "-lc",
-      "-lgcc",
-      "--push-state",
-      "--as-needed",
-      "-lgcc_s",
-      "--pop-state",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o"
-    ],
-    "process_env": null
-  },
-  {
-    "user_id": 1001,
-    "process_name": "ld",
-    "binary_path": "/usr/bin/x86_64-linux-gnu-ld.bfd",
-    "binary_sha256": "05687dbeab906353f44b730d891048a70ff1b7f6976707ba6d3fb777648d264e",
-    "process_args": [
-      "/usr/bin/ld",
-      "-plugin",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so",
-      "-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper",
-      "-plugin-opt=-fresolution=/tmp/ccEIh2Di.res",
-      "-plugin-opt=-pass-through=-lgcc",
-      "-plugin-opt=-pass-through=-lgcc_s",
-      "-plugin-opt=-pass-through=-lpthread",
-      "-plugin-opt=-pass-through=-lc",
-      "-plugin-opt=-pass-through=-lgcc",
-      "-plugin-opt=-pass-through=-lgcc_s",
-      "--build-id",
-      "--eh-frame-hdr",
-      "-m",
-      "elf_x86_64",
-      "--hash-style=gnu",
-      "--as-needed",
-      "-dynamic-linker",
-      "/lib64/ld-linux-x86-64.so.2",
-      "-pie",
-      "-z",
-      "now",
-      "-z",
-      "relro",
-      "-o",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o",
-      "-L/usr/lib/gcc/x86_64-linux-gnu/11",
-      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu",
-      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib",
-      "-L/lib/x86_64-linux-gnu",
-      "-L/lib/../lib",
-      "-L/usr/lib/x86_64-linux-gnu",
-      "-L/usr/lib/../lib",
-      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..",
-      "--no-gc-sections",
-      "-lpthread",
       "-lgcc",
       "--push-state",
       "--as-needed",
@@ -7427,7 +7416,7 @@
       "-fcf-protection",
       "-fno-directives-only",
       "-o",
-      "/tmp/ccSomI0K.s"
+      "/tmp/cceP5AS0.s"
     ],
     "process_env": null
   },
@@ -7445,7 +7434,7 @@
       ".",
       "-imultiarch",
       "x86_64-linux-gnu",
-      "/tmp/cgo-gcc-input-1379261271.c",
+      "/tmp/cgo-gcc-input-2209685827.c",
       "-m64",
       "-mtune=generic",
       "-march=x86-64",
@@ -7458,7 +7447,7 @@
       "-fcf-protection",
       "-dM",
       "-dumpbase",
-      "cgo-gcc-input-1379261271.c",
+      "cgo-gcc-input-2209685827.c",
       "-dumpbase-ext",
       ".c"
     ],
@@ -7478,7 +7467,7 @@
       ".",
       "-imultiarch",
       "x86_64-linux-gnu",
-      "/tmp/cgo-gcc-input-1818083836.c",
+      "/tmp/cgo-gcc-input-3398822664.c",
       "-m64",
       "-mtune=generic",
       "-march=x86-64",
@@ -7492,7 +7481,7 @@
       "-fcf-protection",
       "-dM",
       "-dumpbase",
-      "cgo-gcc-input-1818083836.c",
+      "cgo-gcc-input-3398822664.c",
       "-dumpbase-ext",
       ".c"
     ],
@@ -7536,7 +7525,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccDbwWrC.s"
+      "/tmp/cctiauG5.s"
     ],
     "process_env": null
   },
@@ -7578,7 +7567,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccytWjJg.s"
+      "/tmp/cce4qrh7.s"
     ],
     "process_env": null
   },
@@ -7620,7 +7609,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccniXwhu.s"
+      "/tmp/ccRB2Zlg.s"
     ],
     "process_env": null
   },
@@ -7662,7 +7651,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/cc14NNKE.s"
+      "/tmp/ccdZM4xv.s"
     ],
     "process_env": null
   },
@@ -7704,7 +7693,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccLdVbNK.s"
+      "/tmp/ccRrsYA3.s"
     ],
     "process_env": null
   },
@@ -7746,7 +7735,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccdlJM6D.s"
+      "/tmp/cc0J5xBB.s"
     ],
     "process_env": null
   },
@@ -7788,7 +7777,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccqfIdmk.s"
+      "/tmp/ccpKLib4.s"
     ],
     "process_env": null
   },
@@ -7830,7 +7819,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccbEcPq0.s"
+      "/tmp/cchSs1UF.s"
     ],
     "process_env": null
   },
@@ -7872,7 +7861,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccZwxrGH.s"
+      "/tmp/ccWe0OxF.s"
     ],
     "process_env": null
   },
@@ -7914,7 +7903,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccKkqZ85.s"
+      "/tmp/cctEU5v1.s"
     ],
     "process_env": null
   },
@@ -7956,7 +7945,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccvI4kz1.s"
+      "/tmp/cc05E5Qq.s"
     ],
     "process_env": null
   },
@@ -7998,7 +7987,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccGrr1Jz.s"
+      "/tmp/ccGC6BnR.s"
     ],
     "process_env": null
   },
@@ -8040,7 +8029,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/cc7tZ1IO.s"
+      "/tmp/ccNK0wsp.s"
     ],
     "process_env": null
   },
@@ -8081,7 +8070,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccLs9rmX.s"
+      "/tmp/cceGRtLC.s"
     ],
     "process_env": null
   },
@@ -8122,7 +8111,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccf1NkR1.s"
+      "/tmp/ccCny9NJ.s"
     ],
     "process_env": null
   },
@@ -8163,7 +8152,7 @@
       "-fstack-clash-protection",
       "-fcf-protection",
       "-o",
-      "/tmp/ccrTTao2.s"
+      "/tmp/ccJ0Mwhh.s"
     ],
     "process_env": null
   },
@@ -8177,7 +8166,68 @@
       "-plugin",
       "/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so",
       "-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper",
-      "-plugin-opt=-fresolution=/tmp/cc8hRGrG.res",
+      "-plugin-opt=-fresolution=/tmp/ccCbwoHd.res",
+      "-plugin-opt=-pass-through=-lgcc",
+      "-plugin-opt=-pass-through=-lgcc_s",
+      "-plugin-opt=-pass-through=-lpthread",
+      "-plugin-opt=-pass-through=-lc",
+      "-plugin-opt=-pass-through=-lgcc",
+      "-plugin-opt=-pass-through=-lgcc_s",
+      "--build-id",
+      "--eh-frame-hdr",
+      "-m",
+      "elf_x86_64",
+      "--hash-style=gnu",
+      "--as-needed",
+      "-dynamic-linker",
+      "/lib64/ld-linux-x86-64.so.2",
+      "-pie",
+      "-z",
+      "now",
+      "-z",
+      "relro",
+      "-o",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o",
+      "-L/usr/lib/gcc/x86_64-linux-gnu/11",
+      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu",
+      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib",
+      "-L/lib/x86_64-linux-gnu",
+      "-L/lib/../lib",
+      "-L/usr/lib/x86_64-linux-gnu",
+      "-L/usr/lib/../lib",
+      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..",
+      "--no-gc-sections",
+      "-lpthread",
+      "-lgcc",
+      "--push-state",
+      "--as-needed",
+      "-lgcc_s",
+      "--pop-state",
+      "-lpthread",
+      "-lc",
+      "-lgcc",
+      "--push-state",
+      "--as-needed",
+      "-lgcc_s",
+      "--pop-state",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o"
+    ],
+    "process_env": null
+  },
+  {
+    "user_id": 1001,
+    "process_name": "collect2",
+    "binary_path": "/usr/lib/gcc/x86_64-linux-gnu/11/collect2",
+    "binary_sha256": "325cbc2db04a6610cec50a13250ff1a31a278302758ede163bf34b89fbc72857",
+    "process_args": [
+      "/usr/lib/gcc/x86_64-linux-gnu/11/collect2",
+      "-plugin",
+      "/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so",
+      "-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper",
+      "-plugin-opt=-fresolution=/tmp/ccnVwrah.res",
       "-plugin-opt=-pass-through=-lgcc",
       "-plugin-opt=-pass-through=-lgcc_s",
       "-plugin-opt=-pass-through=-lpthread",
@@ -8230,67 +8280,6 @@
   },
   {
     "user_id": 1001,
-    "process_name": "collect2",
-    "binary_path": "/usr/lib/gcc/x86_64-linux-gnu/11/collect2",
-    "binary_sha256": "325cbc2db04a6610cec50a13250ff1a31a278302758ede163bf34b89fbc72857",
-    "process_args": [
-      "/usr/lib/gcc/x86_64-linux-gnu/11/collect2",
-      "-plugin",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so",
-      "-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper",
-      "-plugin-opt=-fresolution=/tmp/ccEIh2Di.res",
-      "-plugin-opt=-pass-through=-lgcc",
-      "-plugin-opt=-pass-through=-lgcc_s",
-      "-plugin-opt=-pass-through=-lpthread",
-      "-plugin-opt=-pass-through=-lc",
-      "-plugin-opt=-pass-through=-lgcc",
-      "-plugin-opt=-pass-through=-lgcc_s",
-      "--build-id",
-      "--eh-frame-hdr",
-      "-m",
-      "elf_x86_64",
-      "--hash-style=gnu",
-      "--as-needed",
-      "-dynamic-linker",
-      "/lib64/ld-linux-x86-64.so.2",
-      "-pie",
-      "-z",
-      "now",
-      "-z",
-      "relro",
-      "-o",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o",
-      "-L/usr/lib/gcc/x86_64-linux-gnu/11",
-      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu",
-      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib",
-      "-L/lib/x86_64-linux-gnu",
-      "-L/lib/../lib",
-      "-L/usr/lib/x86_64-linux-gnu",
-      "-L/usr/lib/../lib",
-      "-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..",
-      "--no-gc-sections",
-      "-lpthread",
-      "-lgcc",
-      "--push-state",
-      "--as-needed",
-      "-lgcc_s",
-      "--pop-state",
-      "-lpthread",
-      "-lc",
-      "-lgcc",
-      "--push-state",
-      "--as-needed",
-      "-lgcc_s",
-      "--pop-state",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o",
-      "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o"
-    ],
-    "process_env": null
-  },
-  {
-    "user_id": 1001,
     "process_name": "as",
     "binary_path": "/usr/bin/x86_64-linux-gnu-as",
     "binary_sha256": "c7ab3773975b42b5db77fc10b7095d7d5a9c0392f394d4b317ddfc502b0ddbca",
@@ -8305,7 +8294,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccSomI0K.s"
+      "/tmp/cceP5AS0.s"
     ],
     "process_env": null
   },
@@ -8322,7 +8311,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/cc14NNKE.s"
+      "/tmp/cc05E5Qq.s"
     ],
     "process_env": null
   },
@@ -8339,7 +8328,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/cc7tZ1IO.s"
+      "/tmp/cc0J5xBB.s"
     ],
     "process_env": null
   },
@@ -8356,7 +8345,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccDbwWrC.s"
+      "/tmp/ccGC6BnR.s"
     ],
     "process_env": null
   },
@@ -8373,7 +8362,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccGrr1Jz.s"
+      "/tmp/ccNK0wsp.s"
     ],
     "process_env": null
   },
@@ -8390,7 +8379,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccKkqZ85.s"
+      "/tmp/ccRB2Zlg.s"
     ],
     "process_env": null
   },
@@ -8407,7 +8396,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccLdVbNK.s"
+      "/tmp/ccRrsYA3.s"
     ],
     "process_env": null
   },
@@ -8424,7 +8413,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccZwxrGH.s"
+      "/tmp/ccWe0OxF.s"
     ],
     "process_env": null
   },
@@ -8441,7 +8430,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccbEcPq0.s"
+      "/tmp/ccdZM4xv.s"
     ],
     "process_env": null
   },
@@ -8458,7 +8447,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccdlJM6D.s"
+      "/tmp/cce4qrh7.s"
     ],
     "process_env": null
   },
@@ -8475,7 +8464,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccniXwhu.s"
+      "/tmp/cchSs1UF.s"
     ],
     "process_env": null
   },
@@ -8492,7 +8481,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccqfIdmk.s"
+      "/tmp/ccpKLib4.s"
     ],
     "process_env": null
   },
@@ -8509,7 +8498,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccvI4kz1.s"
+      "/tmp/cctEU5v1.s"
     ],
     "process_env": null
   },
@@ -8526,7 +8515,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccytWjJg.s"
+      "/tmp/cctiauG5.s"
     ],
     "process_env": null
   },
@@ -8543,7 +8532,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccLs9rmX.s"
+      "/tmp/ccCny9NJ.s"
     ],
     "process_env": null
   },
@@ -8560,7 +8549,7 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccf1NkR1.s"
+      "/tmp/ccJ0Mwhh.s"
     ],
     "process_env": null
   },
@@ -8577,7 +8566,18 @@
       "--gdwarf-5",
       "--64",
       "-o",
-      "/tmp/ccrTTao2.s"
+      "/tmp/cceGRtLC.s"
+    ],
+    "process_env": null
+  },
+  {
+    "user_id": 1001,
+    "process_name": "dig",
+    "binary_path": "/usr/bin/dig",
+    "binary_sha256": "c03a16c057523c1f9707d45814c03c754c0ebeeb938b5530b9d1ca78cf07c042",
+    "process_args": [
+      "dig",
+      "xmr.metal3d.org"
     ],
     "process_env": null
   },
@@ -8610,7 +8610,7 @@
       "-O2",
       "-I",
       ".",
-      "/tmp/cgo-gcc-input-1379261271.c"
+      "/tmp/cgo-gcc-input-2209685827.c"
     ],
     "process_env": null
   },
@@ -8631,7 +8631,7 @@
       "-fno-stack-protector",
       "-I",
       ".",
-      "/tmp/cgo-gcc-input-1818083836.c"
+      "/tmp/cgo-gcc-input-3398822664.c"
     ],
     "process_env": null
   },
@@ -8712,17 +8712,6 @@
       "-race",
       "-vet=off",
       "./..."
-    ],
-    "process_env": null
-  },
-  {
-    "user_id": 0,
-    "process_name": "killall",
-    "binary_path": "/usr/bin/killall",
-    "binary_sha256": "4527e56d015ec6003c985302ef8b222bf054bff69a4f6c0c782cd089e0aa688c",
-    "process_args": [
-      "killall",
-      "tracee"
     ],
     "process_env": null
   },
