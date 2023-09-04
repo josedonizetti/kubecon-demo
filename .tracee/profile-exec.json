@@ -1,0 +1,55 @@
+[
+  {
+    "user_id": 1001,
+    "process_name": "bash",
+    "binary_path": "/usr/bin/bash",
+    "binary_sha256": "2c336c63e26881d2f02f34379024e7c314bce572c08cbaa319bacbbec29f93ed",
+    "process_args": [
+      "/usr/bin/bash",
+      "--noprofile",
+      "--norc",
+      "-e",
+      "-o",
+      "pipefail"
+    ],
+    "process_env": null
+  },
+  {
+    "user_id": 1001,
+    "process_name": "bash",
+    "binary_path": "/usr/bin/bash",
+    "binary_sha256": "2c336c63e26881d2f02f34379024e7c314bce572c08cbaa319bacbbec29f93ed",
+    "process_args": [
+      "/usr/bin/bash",
+      "-e"
+    ],
+    "process_env": null
+  },
+  {
+    "user_id": 1001,
+    "process_name": "curl",
+    "binary_path": "/usr/bin/curl",
+    "binary_sha256": "3d955d932cc831672a17dce4900c871714f9f3bd4f4a64ba7ee184444d05bb07",
+    "process_args": [
+      "curl",
+      "-s",
+      "-o",
+      "/dev/null",
+      "-w",
+      "%{http_code}",
+      "localhost:3366/healthz"
+    ],
+    "process_env": null
+  },
+  {
+    "user_id": 1001,
+    "process_name": "sleep",
+    "binary_path": "/usr/bin/sleep",
+    "binary_sha256": "8b2e8564da06c4712a580fd7bd91a236ad3f891ae6ba0a50b117bbe050d328f0",
+    "process_args": [
+      "sleep",
+      "1"
+    ],
+    "process_env": null
+  }
+]
