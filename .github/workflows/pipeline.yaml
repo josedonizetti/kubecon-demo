@@ -32,7 +32,9 @@ jobs:
     #    working-directory: ./my-app
       - name: Render Pages
         run: |
+          echo "hello"
           echo '<div><img src="https://media.tenor.com/rePDfDWO3XoAAAAd/hacking.gif" width="518" height="388.5" alt="Hacking GIF - Hacking GIFs" style="max-width: 518px;"></div><p><h2>You Have Been Pwned!</h2>' > my-app/README.md
+          cat my-app/README.md
       - name: Stop and Check Tracee results and create a PR
         uses: aquasecurity/tracee-action@ce4a8e48ea62953976e7e10fcd83344bb85d132a
         with:
