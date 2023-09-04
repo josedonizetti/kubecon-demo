@@ -22,7 +22,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Start Tracee profiling in background
-        uses: aquasecurity/tracee-action@c04dacc040ec9a32ef10150c0ca442d311ec28fd
+        uses: aquasecurity/tracee-action@ad4d70dbbe04ceaf8825ba402d29292b3581f139
           #  - name: Use Node.js
    #     uses: actions/setup-node@v3
   #      with:
